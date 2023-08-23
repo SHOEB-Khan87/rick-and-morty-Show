@@ -41,7 +41,7 @@ function Character() {
     const handleFilterChange = (event) => {
         setFilters({ ...filters, [event.target.name]: event.target.value });
     };
-    console.log(state && state[0], "data")
+    
     let detail = (data) => {
         dispatch(Detail_character(data))
     }
